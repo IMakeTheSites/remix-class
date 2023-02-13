@@ -12,6 +12,8 @@ export default function NotesPage() {
   );
 }
 
+export function loader() {}
+
 export async function action({ request }) {
   const formData = await request.formData();
   const noteData = Object.fromEntries(formData);
